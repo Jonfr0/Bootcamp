@@ -1,0 +1,158 @@
+.section_faqs {
+  padding: 20px 0px 80px 0px;
+  margin: 0px 8.4vw;
+}
+
+.title {
+  color: yellow;
+  font-size: 24px;
+  line-height: 1.2em;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 42px;
+  line-height: 1.2em;
+  margin-bottom: 28px;
+  color: #fff;
+}
+
+.item,
+.item_pointer {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+  padding: 20px;
+  margin: 0px 0px 20px;
+  border-radius: 6px;
+  border: 2px solid white;
+}
+
+/* -----------Accordion closed------------- */
+
+.accordion .item .list,
+.accordion .item .response {
+  display: none;
+}
+
+.accordion .item .link .svg_up {
+  display: none;
+}
+
+.accordion .item .link .svg_down {
+  display: inherit;
+}
+
+/* Accordion open */
+
+.accordion .item_open {
+  color: white;
+}
+
+.accordion .item_open .list,
+.accordion .item_open .response {
+  display: inherit;
+}
+
+.accordion .item_open .question {
+  display: flex;
+  align-content: center;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  color: #4df6e2;
+}
+
+.accordion .item_open .response {
+  line-height: 1.5em;
+  padding-top: 16px;
+}
+
+.accordion .item_open .list {
+  line-height: 1.5em;
+  padding: 12px 20px 0px;
+}
+
+.accordion .item_open .list:empty {
+  display: none;
+}
+
+.accordion .item_open {
+  margin: 0px 0px 20px;
+  padding: 20px;
+  border-radius: 6px;
+  border: 2px solid #fff;
+  border-color: #4df6e2;
+  cursor: pointer;
+}
+
+.accordion .item_open .link .svg_up {
+  display: inherit;
+}
+
+.accordion .item_open .link .svg_down {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 22px;
+  }
+  .subtitle {
+    font-size: 32px;
+    line-height: 1.2em;
+    margin-bottom: 34px;
+    color: #fff;
+  }
+
+  .question {
+    font-size: 16px;
+    padding: 18px;
+    margin: 0px 0px 18px;
+  }
+
+  /* -----------Accordion closed------------- */
+
+  /* Accordion open */
+
+  .accordion .item_open .response {
+    line-height: 1.2em;
+    padding-top: 12px;
+  }
+
+  .accordion .item_open .list {
+    line-height: 1.2em;
+    padding: 10px 18px 0px;
+  }
+
+  .accordion .item_open {
+    margin: 0px 0px 18px;
+    padding: 18px;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 582px) {
+  .question svg {
+    opacity: 0;
+  }
+  .title,
+  .subtitle {
+    text-align: center;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 28px;
+  }
+}

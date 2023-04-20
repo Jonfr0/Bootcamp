@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "ExoSoft";
+  src: url("../../public/ExoSoft-SemiBold.woff");
+}
+
+.bootcamp_section {
+  display: flex;
+  margin: 0px 8.4vw;
+  margin-top: 20px;
+}
+
+.line {
+  border-top: 1px solid white;
+  border-style: dotted;
+  width: 100%;
+  margin: 20px 0px 32px 0px;
+}
+
+.title {
+  margin: 12px 0px 16px 0px;
+  color: #4df6e2;
+}
+.finance_title {
+  margin: 0px 0px 16px 0px;
+  color: white;
+}
+
+.subtitle {
+  margin: 12px 0px 4px 0px;
+}
+
+.info {
+  line-height: 1.5em;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.list {
+  padding-left: 28px;
+}
+
+.weeks .item {
+  margin-bottom: 4px;
+}
+
+.strong {
+  font-family: 700;
+}
+
+.price {
+  display: flex;
+  gap: 1vw;
+  margin-bottom: 80px;
+}
+
+.price_item {
+  border: 1px solid #4df6e2;
+  border-radius: 6px;
+  color: #4df6e2;
+  padding: 18px;
+  width: 25vw;
+  justify-content: center;
+  font-family: "ExoSoft";
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0px 0px 0px;
+}
+
+.financing_item {
+  background-color: #121212;
+  border-radius: 6px;
+  color: white;
+  padding: 18px;
+  width: 25vw;
+  justify-content: center;
+  font-family: "ExoSoft";
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0px 0px 0px;
+}
+
+.euros {
+  font-size: 40px;
+  padding: 12px 0px 24px 0px;
+}
+
+.cta_list {
+  padding: 16px 0px 0px 16px;
+}
+.subprice {
+  font-size: 18px;
+}
+
+.weeks {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .financing_item,
+  .price_item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 650px) {
+  .financing_item,
+  .price_item {
+    width: 70%;
+  }
+}

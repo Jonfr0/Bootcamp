@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "ExoSoft";
+  src: url("../../public/ExoSoft-SemiBold.woff");
+}
+
+.header {
+  font-family: "ExoSoft";
+  position: sticky;
+  top: 0px;
+}
+
+.navbar {
+  background-color: black;
+  min-height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 45px;
+}
+
+.logo,
+.link {
+  color: white;
+  text-decoration: none;
+  transition: 0.7s ease;
+  background-color: transparent;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.link:hover {
+  color: #4df6e2;
+}
+
+/* Menu styles */
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  list-style: none;
+  gap: 60px;
+  background-color: black;
+}
+
+/* --------------Hamburger---------------- */
+.hamburger {
+  width: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  margin: 6px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.bar:nth-child(1) {
+  height: 3px;
+}
+
+.bar:nth-child(2) {
+  height: 2px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.clicked .bar:nth-child(2) {
+    height: 3px;
+    transform: translateY(-4.25px) rotate(-45deg);
+  }
+
+  .hamburger.clicked .bar:nth-child(1) {
+    height: 3px;
+    transform: translateY(4.25px) rotate(45deg);
+  }
+
+  /* -------------Menu----------------- */
+  .nav-menu.open {
+    position: fixed;
+    top: -100%;
+    left: 0px;
+    width: 100%;
+    height: 120px;
+    gap: 60px;
+    padding: 45px;
+    background-color: #e10bcb;
+    transition: 0.3s;
+    top: 66px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: -100%;
+    left: 0px;
+    width: 100%;
+    height: 120px;
+    gap: 60px;
+    padding: 45px;
+    background-color: #e10bcb;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    background-color: transparent;
+  }
+
+  .link {
+    color: black;
+    font-weight: 600px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 625px) {
+  .nav-menu.open {
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    /* top: -100%; */
+    left: 0px;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    padding: 16px 32px;
+    font-size: 28px;
+    background-color: #e10bcb;
+    transition: 0.3s;
+    top: 66px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0px 24px;
+  }
+}
